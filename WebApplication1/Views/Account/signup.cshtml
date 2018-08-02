@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>ثبت نام</title>
+<!-- Custom Theme files -->
+<link href="../../wwwroot/Content/css/login.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="../../wwwroot/Content/css/font-awesome.min.css">
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<script type="text/javascript" src="../../wwwroot/Scripts/js/sweet-alert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../wwwroot/Content/css/sweet-alert.css">
+</head>
+<body>
+
+<!--header start here-->
+<div class="login-form">
+			<div class="top-login">
+				<span><img src="images/add-user.png" alt=""/></span>
+			</div>
+			<center>
+				<div id="error" style="color:red;display:block;font-size:20px;"></div>
+			</center>
+			<h1>ثبت نام</h1>
+			<div class="login-top">
+			<form method="post" action="pay.html">
+				<div class="login-ic">
+					
+					<input type="text" name="fname" value="نام"style="font-family:isans2" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'نام';}"/>
+					<i  class="fa fa-user " style="font-size:25px;color:white;margin-top:10px;margin-left:12px;" aria-hidden="true"></i><div class="clear"> </div>
+				</div>
+				<div class="login-ic">
+					
+					<input type="text" name="lname" value="نام خانوادگی" style="font-family:isans2"onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'نام خانوادگی';}"/>
+					<i  class="fa fa-male" style="font-size:25px;color:white;margin-top:10px;margin-left:12px;" aria-hidden="true"></i><div class="clear"> </div>
+				</div>
+				<div class="login-ic">
+					
+					<input type="text" name="username"style="font-family:isans2" value="نام کاربری" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'نام کاربری';}"/>
+					<i  class="fa fa-user-plus" style="font-size:24px;color:white;margin-top:10px;margin-left:12px;" aria-hidden="true"></i><div class="clear"> </div>
+				</div>
+				
+				<div class="login-ic">
+					
+					<input type="text" name="email"style="font-family:isans2" value="ایمیل " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'ایمیل';}"/>
+					<i  class="fa fa-envelope" style="font-size:25px;color:white;margin-top:10px;margin-left:12px;" aria-hidden="true"></i><div class="clear"> </div>
+				</div>
+				<div class="login-ic">
+					
+					<input type="password" name="password"style="font-family:isans2" placeholder="رمز عبور" onfocus="this.value = '';"/>
+					<i  class="fa fa-unlock-alt" style="font-size:25px;color:white;margin-top:10px;margin-left:12px;" aria-hidden="true"></i><div class="clear"> </div>
+				</div>
+				<div class="login-ic">
+					
+					<input type="password" style="font-family:isans2" placeholder="تکرار رمز عبور" onfocus="this.value = '';"/>
+					<i  class="fa fa-refresh" style="font-size:25px;color:white;margin-top:10px;margin-left:12px;" aria-hidden="true"></i><div class="clear"> </div>
+				</div>
+				<div class="log-bwn">
+					<input  style="font-family:isans2"type="submit"  value="ثبت اطلاعات" >
+				</div>
+				</form>
+				
+			</div>
+			
+			<p class="copy">© 2016 Square Login Form. All rights reserved | Design by ..............</p>
+</div>		
+
+</body>
+</html>
