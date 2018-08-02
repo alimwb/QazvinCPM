@@ -1,1 +1,75 @@
-﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ورود</title>
+<!-- Custom Theme files -->
+<link href="../../wwwroot/Content/css/login.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="../../wwwroot/Content/css/font-awesome.min.css">
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<style>
+.nosingup{
+color:white;
+}
+.nosingup:hover{
+transition: all 0.3s ease;
+     -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+color:darkgrey;
+}
+
+</style>
+
+</head>
+<body>
+<!--header start here-->
+<div class="login-form">
+			<div class="top-login">
+				<span><img src="../../wwwroot/images/group.png" alt=""/></span>
+			</div>
+			<center>
+				<div id="error" style="color:red;display:none;font-size:20px;">.چنین کاربری وجود ندارد</div>
+			</center>
+			<h1 style="font-family:isans">ورود
+			</h1>
+			
+			<div class="login-top">
+			<form action="" method="post">
+				<div class="login-ic">
+					
+					<input type="text" name="username"style="font-family:isans2" value="نام کاربری" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'نام کاربری';}"/>
+						<i  class="fa fa-user" style="font-size:25px;color:white;margin-top:10px;margin-left:12px;" aria-hidden="true"></i><div class="clear"> </div>
+				
+				</div>
+				
+				<div class="login-ic">
+					
+					<input type="password" name="password"style="font-family:isans2" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}"/>
+					<i  class="fa fa-lock" style="font-size:25px;color:white;margin-top:10px;margin-left:12px;" aria-hidden="true"></i><div class="clear"> </div>
+				</div>
+			
+				<div class="log-bwn" >
+					<input style="font-family:isans2"type="submit" name="button" value="ورود" >
+				</div>
+				<div class="log-bwn"style="color:white;font-family:isans2">
+				<br>
+			     	رمز عبور را فراموش کرده اید؟<a href="reset.html" class="nosingup"> کلیک کنید</a>
+				
+					<br>
+					<br>
+					
+				ثبت نام نکرده اید؟   <a href="singup.html" class="nosingup">برای ثبت نام اینجا کلیک کنید</a>
+				
+				</div>
+				</form>
+			</div>
+			<p class="copy">© 2016 Square Login Form. All rights reserved | Design by ..............</p>
+</div>		
+<script type="text/javascript" src="../../wwwroot/Scripts/js/jquery.min.js"></script>
+<!--header start here-->
+
+</body>
+</html>
