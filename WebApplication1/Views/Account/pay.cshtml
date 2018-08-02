@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>ثبت نام</title>
+<!-- Custom Theme files -->
+<link href="../../wwwroot/Content/css/login.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="../../wwwroot/Content/css/font-awesome.min.css">
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<script type="text/javascript" src="../../wwwroot/Scripts/js/sweet-alert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../wwwroot/Content/css/sweet-alert.css">
+</head>
+<body>
+
+<!--header start here-->
+<div class="login-form">
+			<div class="top-login">
+				<span><img src="images/add-user.png" alt=""/></span>
+			</div>
+			<center>
+				<div id="error" style="color:red;display:block;font-size:20px;"></div>
+			</center>
+			<h1>پرداخت</h1>
+			<div class="login-top">
+				<div class="log-bwn">
+					<input id="successfulsingup" style="font-family:isans2"type="submit"  value="successfulsingup" >
+				</div>
+				<div class="log-bwn">
+					<input id="successfulpay" style="font-family:isans2"type="submit"  value="successfulpay" >
+				</div>
+				<div class="log-bwn">
+					<input id="errorpay" style="font-family:isans2"type="submit"  value="error" >
+				</div>
+			</div>
+		<script type="text/javascript">
+
+document.querySelector('#successfulsingup').onclick = function(){
+  swal({
+        title: "آیا مطمن هستید؟",   
+		text: "برای رفتن به درگاه پرداخت روی دکمه پرداخت کلیک کنید  در غیر اینصورت انصراف را بزنید.",   
+		type: "warning",
+  showCancelButton: true,
+  confirmButtonColor: "#DD6B55",
+  confirmButtonText: "پرداخت",
+  closeOnConfirm: false
+},
+function(){
+  window.location.href = 'dargah.hrml';
+});
+};
+	</script>
+	<script type="text/javascript">
+document.querySelector('#successfulpay').onclick = function(){
+swal("موفق", "پرداخت با موفقیت انجام شد", "success");
+};
+
+	</script>
+	<script type="text/javascript">
+document.querySelector('#errorpay').onclick = function(){
+sweetAlert("خطا", "پرداخت با خطا مواجه شد", "error");
+};
+
+	</script>
+			<p class="copy">© 2016 Square Login Form. All rights reserved | Design by ..............</p>
+</div>		
+</body>
+</html>
